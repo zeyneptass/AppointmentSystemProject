@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AppointmentSystem_API\AppointmentSystem_API.csproj" />
+    <ProjectReference Include="..\AppointmentSystem_Core\AppointmentSystem_Core.csproj" />
     <ProjectReference Include="..\AppointmentSystem_Domain\AppointmentSystem_Domain.csproj" />
   </ItemGroup>
 
