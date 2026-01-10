@@ -1,0 +1,16 @@
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\obj\Debug\net8.0\AppointmentSystem_Infrastructure.csproj.AssemblyReference.cache
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\obj\Debug\net8.0\AppointmentSystem_Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\obj\Debug\net8.0\AppointmentSystem_Infrastructure.AssemblyInfoInputs.cache
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\obj\Debug\net8.0\AppointmentSystem_Infrastructure.AssemblyInfo.cs
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\obj\Debug\net8.0\AppointmentSystem_Infrastructure.csproj.CoreCompileInputs.cache
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\obj\Debug\net8.0\AppointmentSystem_Infrastructure.sourcelink.json
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\bin\Debug\net8.0\AppointmentSystem_Infrastructure.deps.json
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\bin\Debug\net8.0\AppointmentSystem_Infrastructure.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\bin\Debug\net8.0\AppointmentSystem_Infrastructure.pdb
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\bin\Debug\net8.0\AppointmentSystem_Domain.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\bin\Debug\net8.0\AppointmentSystem_Domain.pdb
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\obj\Debug\net8.0\Appointm.8C18AA8C.Up2Date
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\obj\Debug\net8.0\AppointmentSystem_Infrastructure.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\obj\Debug\net8.0\refint\AppointmentSystem_Infrastructure.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\obj\Debug\net8.0\AppointmentSystem_Infrastructure.pdb
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Infrastructure\obj\Debug\net8.0\ref\AppointmentSystem_Infrastructure.dll
