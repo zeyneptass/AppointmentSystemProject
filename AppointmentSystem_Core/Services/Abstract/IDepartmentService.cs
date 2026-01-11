@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppointmentSystem_Core.Services.Abstract
 {
-    internal class IDepartmentService
+    public interface IDepartmentService
     {
     }
 }

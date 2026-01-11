@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -10,14 +11,19 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+#region DB Confguration
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // 2. Register the DbContext with the DI container
 builder.Services.AddDbContext<AppointmentDbContext>(options =>
     options.UseSqlServer(connectionString));
+#endregion
+
+
 
 
 var app = builder.Build();
+
 
 
 
