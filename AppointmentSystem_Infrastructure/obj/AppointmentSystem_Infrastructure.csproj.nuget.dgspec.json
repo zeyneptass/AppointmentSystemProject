@@ -117,7 +117,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Dev\\DBakırWebKursu\\AppointmentSystemProject\\AppointmentSystem_Domain\\AppointmentSystem_Domain.csproj": {
+                "projectPath": "C:\\Dev\\DBakırWebKursu\\AppointmentSystemProject\\AppointmentSystem_Domain\\AppointmentSystem_Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -135,6 +139,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[16.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
