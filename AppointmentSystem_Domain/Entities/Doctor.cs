@@ -13,7 +13,7 @@ namespace AppointmentSystem_Domain.Entities
         public string LastName { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
-        public int DepartmentId { get; set; }
+        public Guid DepartmentId { get; set; }
         public bool isActive { get; set; } = true;
         // Navigation Properties
         public Department Department { get; set; }

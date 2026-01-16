@@ -10,8 +10,8 @@ namespace AppointmentSystem_Domain.Entities
 {
     public class Appointment : BaseEntity
     {       
-        public int DoctorId { get; set; }
-        public int PatientId { get; set; }
+        public Guid DoctorId { get; set; }
+        public Guid PatientId { get; set; }
         public AppointmentStatus Status { get; set; } = AppointmentStatus.Pending;  // default beklemede
         public DateTime AppointmentDate { get; set; }
 
