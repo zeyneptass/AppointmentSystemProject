@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppointmentSystem_Domain.EF
+namespace AppointmentSystem_Infrastructure.Persistence.Context.EF
 {
     public class AppointmentDbContext : DbContext
     {

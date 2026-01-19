@@ -149,3 +149,8 @@ C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\AutoMapper.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\AppointmentSystem_Core.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\AppointmentSystem_Core.pdb

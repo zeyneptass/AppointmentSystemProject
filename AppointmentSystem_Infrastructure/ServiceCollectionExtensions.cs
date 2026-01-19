@@ -1,4 +1,4 @@
-﻿using AppointmentSystem_Domain.Abstract;
+﻿using AppointmentSystem_Core.DataAccess.Abstract;
 using AppointmentSystem_Infrastructure.Repository;
 using AppointmentSystem_Infrastructure.UoW;
 using Microsoft.Extensions.DependencyInjection;

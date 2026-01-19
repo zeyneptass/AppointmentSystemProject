@@ -13,10 +13,17 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.22">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AppointmentSystem_Domain\AppointmentSystem_Domain.csproj" />
+    <ProjectReference Include="..\AppointmentSystem_Core\AppointmentSystem_Core.csproj" />
+    <ProjectReference Include="..\AppointmentSystem_Infrastructure\AppointmentSystem_Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

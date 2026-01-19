@@ -10,3 +10,9 @@ C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Core\obj\Debug
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Core\obj\Debug\net8.0\AppointmentSystem_Core.pdb
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Core\obj\Debug\net8.0\ref\AppointmentSystem_Core.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Core\obj\Debug\net8.0\AppointmentSystem_Core.sourcelink.json
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Core\bin\Debug\net8.0\AppointmentSystem_Domain.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Core\bin\Debug\net8.0\AppointmentSystem_Domain.pdb
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Core\obj\Debug\net8.0\AppointmentSystem_Core.csproj.AssemblyReference.cache
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Core\obj\Debug\net8.0\Appointm.169C5240.Up2Date
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Core\bin\Debug\net8.0\AppointmentSystem_Core.runtimeconfig.json
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Core\obj\Debug\net8.0\AppointmentSystem_Core.genruntimeconfig.cache

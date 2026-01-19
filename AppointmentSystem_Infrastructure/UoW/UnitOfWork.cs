@@ -1,12 +1,13 @@
-﻿using AppointmentSystem_Domain.Abstract;
-using AppointmentSystem_Domain.EF;
+﻿using AppointmentSystem_Core.DataAccess.Abstract;
 using AppointmentSystem_Domain.Entities;
+using AppointmentSystem_Infrastructure.Persistence.Context.EF;
 using AppointmentSystem_Infrastructure.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static AppointmentSystem_Infrastructure.UoW.IUnitOfWork;
 
 namespace AppointmentSystem_Infrastructure.UoW
 {
@@ -29,6 +30,7 @@ namespace AppointmentSystem_Infrastructure.UoW
         public IGenericRepository<Patient> Patients { get; }
 
         public IGenericRepository<Appointment> Appointments { get; }
+
 
         public void Dispose()
         {

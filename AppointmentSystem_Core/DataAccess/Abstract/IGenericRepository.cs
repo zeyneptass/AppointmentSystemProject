@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppointmentSystem_Domain.Abstract
+namespace AppointmentSystem_Core.DataAccess.Abstract
 {
     public interface IGenericRepository<T> where T : BaseEntity
     {

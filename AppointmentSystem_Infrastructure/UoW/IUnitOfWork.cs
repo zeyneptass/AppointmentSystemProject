@@ -1,4 +1,4 @@
-﻿using AppointmentSystem_Domain.Abstract;
+﻿using AppointmentSystem_Core.DataAccess.Abstract;
 using AppointmentSystem_Domain.Entities;
 using System;
 using System.Collections.Generic;
