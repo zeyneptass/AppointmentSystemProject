@@ -1,5 +1,6 @@
 
 
+using AppointmentSystem_Infrastructure;
 using AppointmentSystem_Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,16 +14,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-#region DB Confguration
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-// 2. Register the DbContext with the DI container
-builder.Services.AddDbContext<AppointmentDbContext>(options =>
-    options.UseSqlServer(connectionString));
+#region Infrastructure Services Collection Extension
+builder.Services.AddInfrastructureServices(builder.Configuration);
 #endregion
-
-
-
 
 var app = builder.Build();
 

@@ -29,6 +29,7 @@ namespace AppointmentSystem_Core
             services.AddScoped<IAppointmentService, AppointmentService>();
 
 
+
             #endregion
 
 
