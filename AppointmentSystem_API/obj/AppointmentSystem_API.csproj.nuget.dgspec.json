@@ -33,9 +33,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Dev\\DBakırWebKursu\\AppointmentSystemProject\\AppointmentSystem_Core\\AppointmentSystem_Core.csproj": {
-                "projectPath": "C:\\Dev\\DBakırWebKursu\\AppointmentSystemProject\\AppointmentSystem_Core\\AppointmentSystem_Core.csproj"
-              },
               "C:\\Dev\\DBakırWebKursu\\AppointmentSystemProject\\AppointmentSystem_Infrastructure\\AppointmentSystem_Infrastructure.csproj": {
                 "projectPath": "C:\\Dev\\DBakırWebKursu\\AppointmentSystemProject\\AppointmentSystem_Infrastructure\\AppointmentSystem_Infrastructure.csproj"
               }
@@ -58,9 +55,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "AutoMapper": {
+            "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[16.0.0, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -70,7 +67,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.6.2, )"
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
@@ -150,6 +147,12 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[16.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.22, )"
             }
           },
           "imports": [
@@ -291,6 +294,28 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.22, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
