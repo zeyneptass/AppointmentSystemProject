@@ -157,3 +157,8 @@ C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\AppointmentSystem_Infrastructure.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\AppointmentSystem_Infrastructure.pdb
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll

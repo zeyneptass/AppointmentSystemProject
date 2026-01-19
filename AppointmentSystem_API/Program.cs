@@ -1,5 +1,6 @@
 
-using AppointmentSystem_Infrastructure.Persistence.Context.EF;
+
+using AppointmentSystem_Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

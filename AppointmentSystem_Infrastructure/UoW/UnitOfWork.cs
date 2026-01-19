@@ -1,6 +1,6 @@
 ﻿using AppointmentSystem_Core.DataAccess.Abstract;
 using AppointmentSystem_Domain.Entities;
-using AppointmentSystem_Infrastructure.Persistence.Context.EF;
+using AppointmentSystem_Infrastructure.Persistence.Context;
 using AppointmentSystem_Infrastructure.Repository;
 using System;
 using System.Collections.Generic;

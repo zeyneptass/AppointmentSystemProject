@@ -9,16 +9,14 @@ namespace AppointmentSystem_Domain.Entities
 {
     public class Patient : BaseEntity
     {
-        public string Name { get; set; }
-        public string Surname { get; set; }
         public string TC { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Email { get; set; }
         public DateTime DateOfBirth { get; set; }
 
         // Navigation Properties
         // one to many 
         public ICollection<Appointment> Appointments { get; set; }
+        // Identity User Id ile ilişki
+        public Guid AppUserId { get; set; }
 
     }
 }

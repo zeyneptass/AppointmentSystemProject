@@ -10,3 +10,4 @@ C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Domain\obj\Deb
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Domain\obj\Debug\net8.0\refint\AppointmentSystem_Domain.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Domain\obj\Debug\net8.0\AppointmentSystem_Domain.pdb
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Domain\obj\Debug\net8.0\ref\AppointmentSystem_Domain.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_Domain\obj\Debug\net8.0\AppointmentSystem_Domain.csproj.AssemblyReference.cache
