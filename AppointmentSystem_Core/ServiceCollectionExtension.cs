@@ -35,7 +35,7 @@ namespace AppointmentSystem_Core
 
             #region Generic Repository DI
 
-            services.AddScoped(typeof(IGenericRepository<>), typeof(IGenericRepository<>));
+           
 
             #endregion
 
