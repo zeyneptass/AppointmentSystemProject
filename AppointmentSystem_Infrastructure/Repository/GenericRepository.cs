@@ -17,43 +17,22 @@ namespace AppointmentSystem_Infrastructure.Repository
     {
         AppointmentDbContext _context;
         DbSet<T> _dbSet;
-        private AppointmentDbContext context;
-        private DbSet<Doctor> doctors;
-        private DbSet<Patient> patients;
-        private DbSet<Appointment> appointments;
 
-        public GenericRepository(AppointmentDbContext context, DbSet<AppointmentSystem_Domain.Entities.Department> departments)
+        public GenericRepository(AppointmentDbContext context)
         {
             _context = context;
             _dbSet = _context.Set<T>();
         }
 
-        public GenericRepository(AppointmentDbContext context, DbSet<Doctor> doctors)
-        {
-            this.context = context;
-            this.doctors = doctors;
-        }
-
-        public GenericRepository(AppointmentDbContext context, DbSet<Patient> patients)
-        {
-            this.context = context;
-            this.patients = patients;
-        }
-
-        public GenericRepository(AppointmentDbContext context, DbSet<Appointment> appointments)
-        {
-            this.context = context;
-            this.appointments = appointments;
-        }
 
         public async Task AddAsync(T entity)
         {
             await _dbSet.AddAsync(entity);
         }
 
-        public Task<bool> ExistsAsync(Expression<Func<T, bool>> filter)
+        public async Task<bool> ExistsAsync(Expression<Func<T, bool>> filter)
         {
-            throw new NotImplementedException();
+            return await _dbSet.AnyAsync(filter);
         }
 
         public async Task<IEnumerable<T>> GetAllAsync(bool asNoTracking = true, params Expression<Func<T, object>>[] includes)

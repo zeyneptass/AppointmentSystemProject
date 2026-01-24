@@ -18,10 +18,10 @@ namespace AppointmentSystem_Infrastructure.UoW
         public UnitOfWork(AppointmentDbContext context)
         {
             _context = context;
-            Departments = new GenericRepository<Department>(_context, _context.Departments);
-            Doctors = new GenericRepository<Doctor>(_context, _context.Doctors);
-            Patients = new GenericRepository<Patient>(_context, _context.Patients);
-            Appointments = new GenericRepository<Appointment>(_context, _context.Appointments);
+            Departments = new GenericRepository<Department>(_context);
+            Doctors = new GenericRepository<Doctor>(_context);
+            Patients = new GenericRepository<Patient>(_context);
+            Appointments = new GenericRepository<Appointment>(_context);
         }
         public IGenericRepository<Department> Departments { get; }
 
