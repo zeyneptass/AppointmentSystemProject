@@ -11,12 +11,12 @@ namespace AppointmentSystem_Core.DataAccess.Abstract
 {
     public interface IGenericRepository<T> where T : BaseEntity
     {
-        void Add(T entity);
+        Task AddAsync(T entity);
         void Update(T entity);
-        void Delete(T entity);
-        Task<T> GetById(int id);
-        Task<IEnumerable<T>> GetAll();
-        Task<IEnumerable<T>> Get(Expression<Func<T, bool>> filter);
-
+        void SoftDelete(Guid id);
+        Task<T> GetByIdAsync(Guid id, bool asNoTracking=true);
+        Task<IEnumerable<T>> GetAllAsync(bool asNoTracking = true, params Expression<Func<T, object>>[] includes);
+        Task<IEnumerable<T>> GetAsync(Expression<Func<T, bool>> filter, bool asNoTracking = true, params Expression<Func<T, object>>[] includes);
+        Task<bool> ExistsAsync(Expression<Func<T, bool>> filter); // belirli bir koşulu sağlayan kayıt var mı, yok mu?
     }
 }

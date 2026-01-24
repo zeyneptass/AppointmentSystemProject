@@ -1,4 +1,5 @@
-﻿using AppointmentSystem_Core.Mapper;
+﻿using AppointmentSystem_Core.DataAccess.Abstract;
+using AppointmentSystem_Core.Mapper;
 using AppointmentSystem_Core.Services.Abstract;
 using AppointmentSystem_Core.Services.Concrete;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,6 +33,11 @@ namespace AppointmentSystem_Core
 
             #endregion
 
+            #region Generic Repository DI
+
+            services.AddScoped(typeof(IGenericRepository<>), typeof(IGenericRepository<>));
+
+            #endregion
 
 
             return services;
