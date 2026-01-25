@@ -12,6 +12,8 @@ namespace AppointmentSystem_Core.DTOs.Auth
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public string PhoneNumber { get; set; } = string.Empty;
+        public string Email { get; set; }
+        public string TC { get; set; }
         public string Token { get; set; } = string.Empty;
         public DateTime Expiration { get; set; } = DateTime.Now;
     }

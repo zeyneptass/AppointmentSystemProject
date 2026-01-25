@@ -924,6 +924,7 @@
       "System.Threading.Channels/6.0.0": {},
       "AppointmentSystem_Domain/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.22",
           "Microsoft.Extensions.Identity.Stores": "8.0.22"
         },
         "runtime": {

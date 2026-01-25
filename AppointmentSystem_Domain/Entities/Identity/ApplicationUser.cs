@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,8 @@ namespace AppointmentSystem_Domain.Entities.Identity
     {
         public string Name { get; set; }
         public string Surname { get; set; }
+        public string TC { get; set; }
+        public DateTime DateOfBirth { get; set; }
+
     }
 }

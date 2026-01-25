@@ -19,10 +19,16 @@ namespace AppointmentSystem_Infrastructure.Persistence.Context
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Patient> Patients { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Identity tablolarının oluşmasını sağlar :
             base.OnModelCreating(modelBuilder);
+
+            // TC unique yaptık
+            modelBuilder.Entity<ApplicationUser>()
+                .HasIndex(u => u.TC)
+                .IsUnique();
 
             // 2. KRİTİK:  Configuration dosyalarını (PatientConfiguration vb.) yükler
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
@@ -43,11 +49,11 @@ namespace AppointmentSystem_Infrastructure.Persistence.Context
                 switch (entry.State)
                 {
                     case EntityState.Added:
-                        entry.Entity.CreatedDate = DateTime.Now;
+                        entry.Entity.CreatedDate = DateTime.UtcNow;
                         entry.Entity.IsDeleted = false;
                         break;
                     case EntityState.Modified:
-                        entry.Entity.UpdatedDate = DateTime.Now;
+                        entry.Entity.UpdatedDate = DateTime.UtcNow;
                         break;
                 }
             }
