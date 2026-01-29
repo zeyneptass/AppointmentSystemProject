@@ -14,15 +14,15 @@ namespace AppointmentSystem_Core.Services.Concrete
 {
     public class AuthService : IAuthService
     {
-        UserManager<ApplicationUser> _userManager;
-        SignInManager<ApplicationUser> _signInManager;
-        IConfiguration _configuration;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly ITokenService _tokenService;
 
-        public AuthService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IConfiguration configuration)
+        public AuthService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager,ITokenService tokenService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            _configuration = configuration;
+            _tokenService = tokenService;
         }
         public Task<IDataResult<UserDTO>> LoginAsync(LoginDTO loginDto)
         {

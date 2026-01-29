@@ -1,4 +1,5 @@
-﻿using AppointmentSystem_Domain.Entities.Identity;
+﻿using AppointmentSystem_Core.Services.Abstract;
+using AppointmentSystem_Domain.Entities.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;

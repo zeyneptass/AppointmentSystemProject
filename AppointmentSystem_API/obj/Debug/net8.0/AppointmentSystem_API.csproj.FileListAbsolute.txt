@@ -3,7 +3,6 @@ C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.AssemblyInfoInputs.cache
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.AssemblyInfo.cs
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.csproj.CoreCompileInputs.cache
-C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.MvcApplicationPartsAssemblyInfo.cs
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.MvcApplicationPartsAssemblyInfo.cache
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.sourcelink.json
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\appsettings.Development.json

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppointmentSystem_Infrastructure.Extensions.TokenExtensions
+namespace AppointmentSystem_Core.Services.Abstract
 {
     public interface ITokenService
     {

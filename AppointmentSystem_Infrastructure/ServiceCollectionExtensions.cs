@@ -1,4 +1,6 @@
 ﻿using AppointmentSystem_Core.DataAccess.Abstract;
+using AppointmentSystem_Core.Services.Abstract;
+using AppointmentSystem_Infrastructure.Extensions.TokenExtensions;
 using AppointmentSystem_Infrastructure.Persistence.Context;
 using AppointmentSystem_Infrastructure.Repository;
 using AppointmentSystem_Infrastructure.UoW;
@@ -28,6 +30,8 @@ namespace AppointmentSystem_Infrastructure
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+
+            services.AddScoped<ITokenService, TokenService>();
 
             return services;
 
