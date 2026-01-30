@@ -1,9 +1,12 @@
 
 
 using AppointmentSystem_Core;
+using AppointmentSystem_Domain.Entities.Identity;
 using AppointmentSystem_Infrastructure;
 using AppointmentSystem_Infrastructure.Persistence.Context;
+using AppointmentSystem_Infrastructure.Persistence.Seed;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -25,7 +28,6 @@ builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddCoreServices();
 #endregion
 
-var app = builder.Build();
 
 
 #region Jwt Header Configuration
@@ -53,7 +55,7 @@ builder.Services.AddAuthentication(opt =>
 #region JWT Configuration
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "ECommerce API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Appointment System API", Version = "v1" });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
@@ -80,6 +82,19 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+#endregion
+
+var app = builder.Build();
+
+#region Seed Database
+// Uygulama baþlatýldýðýnda bir scope oluþtur , bu sayede servisleri kullanabiliriz
+using (var scope = app.Services.CreateScope())
+{
+    // DI container'dan UserManager<ApplicationUser> servisini al
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+    // AdminSeeding sýnýfýndaki SeedAdminAsync metodunu çaðýr
+    await AdminSeeding.SeedAdminAsync(userManager);
+}
 #endregion
 
 
