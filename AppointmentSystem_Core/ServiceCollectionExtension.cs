@@ -1,8 +1,11 @@
 ﻿using AppointmentSystem_Core.DataAccess.Abstract;
+using AppointmentSystem_Core.DTOs.Auth;
 using AppointmentSystem_Core.Mapper;
 using AppointmentSystem_Core.Services.Abstract;
 using AppointmentSystem_Core.Services.Concrete;
+using AppointmentSystem_Core.Validators;
 using Microsoft.Extensions.DependencyInjection;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,16 +32,15 @@ namespace AppointmentSystem_Core
             services.AddScoped<IPatientService, PatientService>();
             services.AddScoped<IAppointmentService, AppointmentService>();
 
-
-
-            #endregion
-
-            #region Generic Repository DI
-
-           
+            services.AddScoped<IAuthService, AuthService>();
 
             #endregion
 
+            #region FluentValidation
+
+            services.AddValidatorsFromAssembly(typeof(LoginDTOValidator).Assembly);
+
+            #endregion
 
             return services;
         }

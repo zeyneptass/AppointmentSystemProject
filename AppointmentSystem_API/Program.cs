@@ -1,5 +1,6 @@
 
 
+using AppointmentSystem_Core;
 using AppointmentSystem_Infrastructure;
 using AppointmentSystem_Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,9 @@ builder.Services.AddSwaggerGen();
 
 #region Infrastructure Services Collection Extension
 builder.Services.AddInfrastructureServices(builder.Configuration);
+#endregion
+#region Core Services Collection Extension
+builder.Services.AddCoreServices();
 #endregion
 
 var app = builder.Build();
