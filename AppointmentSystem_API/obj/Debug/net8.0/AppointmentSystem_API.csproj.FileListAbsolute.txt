@@ -3,6 +3,7 @@ C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.AssemblyInfoInputs.cache
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.AssemblyInfo.cs
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.csproj.CoreCompileInputs.cache
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.MvcApplicationPartsAssemblyInfo.cs
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.MvcApplicationPartsAssemblyInfo.cache
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.sourcelink.json
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\appsettings.Development.json
@@ -17,7 +18,10 @@ C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Azure.Core.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Azure.Identity.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\FluentValidation.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Humanizer.dll
+C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -152,7 +156,6 @@ C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\AppointmentSystem_Infrastructure.pdb
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\AppointmentSystem_Core.pdb
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\AppointmentSystem_Domain.pdb
-C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.MvcApplicationPartsAssemblyInfo.cs
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\scopedcss\bundle\AppointmentSystem_API.styles.css
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\staticwebassets.development.json
@@ -170,5 +173,3 @@ C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.pdb
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\AppointmentSystem_API.genruntimeconfig.cache
 C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\obj\Debug\net8.0\ref\AppointmentSystem_API.dll
-C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
-C:\Dev\DBakırWebKursu\AppointmentSystemProject\AppointmentSystem_API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
