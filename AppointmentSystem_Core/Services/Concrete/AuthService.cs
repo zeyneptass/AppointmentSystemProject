@@ -25,9 +25,35 @@ namespace AppointmentSystem_Core.Services.Concrete
             _signInManager = signInManager;
             _tokenService = tokenService;
         }
-        public Task<IDataResult<UserDTO>> LoginAsync(LoginDTO loginDto)
+        public async Task<IDataResult<UserDTO>> LoginAsync(LoginDTO loginDto)
         {
-            throw new NotImplementedException();
+            var user = await _userManager.FindByNameAsync(loginDto.TC);
+            if(user == null)
+            {
+                return new ErrorDataResult<UserDTO>("Girilen TC Kimlik numarasıyla kayıtlı kullanıcı bulunamadı.");
+            }
+            var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false); //false lockoutOnFailure : başarısız girişlerde kullanıcıyı kilitleme işlemi yapılmasın
+            if (!result.Succeeded)
+            {
+                return new ErrorDataResult<UserDTO>("Girilen şifre yanlış.");
+            }
+            var roles = await _userManager.GetRolesAsync(user);
+            //loginiçin tokren oluşturma
+            var token = _tokenService.CreateToken(user, roles);
+
+            // manual mapping
+            var userDTO = new UserDTO
+            {
+                Id = user.Id.ToString(),
+                FirstName = user.Name,
+                LastName = user.Surname,
+                Email = user.Email,
+                TC = user.TC,  // Register ile artık ApplicationUser'da T var
+                PhoneNumber = user.PhoneNumber,
+                Token = token,
+                Expiration = DateTime.Now.AddHours(3) // tokenın geçerlilik süresi 3 saat
+            };
+            return new SuccessDataResult<UserDTO>(userDTO, "Başarılı bir şekilde giriş yaptınız.");
         }
 
         public async Task<IDataResult<UserDTO>> RegisterAsync(RegisterDTO registerDto)

@@ -39,6 +39,13 @@ namespace AppointmentSystem_Infrastructure.Persistence.Context
             modelBuilder.Entity<Patient>().HasQueryFilter(x => !x.IsDeleted);
             modelBuilder.Entity<Appointment>().HasQueryFilter(x => !x.IsDeleted);
             //Böylece silinen veriler otomatik olarak sorgulamalardan filtrelenir.
+
+            modelBuilder.Entity<ApplicationUser>(entity =>
+            {
+                entity.Property(u => u.PhoneNumber)
+                      .IsRequired()
+                      .HasMaxLength(13);
+            });
         }
 
         // SaveChangesAsync Amacı: Her kaydın ne zaman oluşturulduğunu ve son güncellemesinin ne zaman yapıldığını otomatik olarak kaydetmek.

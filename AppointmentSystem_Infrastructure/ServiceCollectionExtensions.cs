@@ -1,8 +1,8 @@
 ﻿using AppointmentSystem_Core.DataAccess.Abstract;
 using AppointmentSystem_Core.Services.Abstract;
-using AppointmentSystem_Infrastructure.Extensions.TokenExtensions;
 using AppointmentSystem_Infrastructure.Persistence.Context;
 using AppointmentSystem_Infrastructure.Repository;
+using AppointmentSystem_Infrastructure.Services.TokenExtensions;
 using AppointmentSystem_Infrastructure.UoW;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

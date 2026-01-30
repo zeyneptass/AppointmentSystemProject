@@ -10,7 +10,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppointmentSystem_Infrastructure.Extensions.TokenExtensions
+namespace AppointmentSystem_Infrastructure.Services.TokenExtensions
 {
     public class TokenService : ITokenService
     {

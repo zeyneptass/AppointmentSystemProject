@@ -8,6 +8,7 @@ namespace AppointmentSystem_Core.DTOs.Auth
 {
     public class LoginDTO
     {
-        
+        public string TC { get; set; }
+        public string Password { get; set; }
     }
 }
