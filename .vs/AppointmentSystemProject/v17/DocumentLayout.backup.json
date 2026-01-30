@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{41777CF7-AD87-4F29-B4BF-66CFE35E1017}|AppointmentSystem_API\\AppointmentSystem_API.csproj|c:\\dev\\dbak\u0131rwebkursu\\appointmentsystemproject\\appointmentsystem_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{41777CF7-AD87-4F29-B4BF-66CFE35E1017}|AppointmentSystem_API\\AppointmentSystem_API.csproj|solutionrelative:appointmentsystem_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41777CF7-AD87-4F29-B4BF-66CFE35E1017}|AppointmentSystem_API\\AppointmentSystem_API.csproj|c:\\dev\\dbak\u0131rwebkursu\\appointmentsystemproject\\appointmentsystem_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41777CF7-AD87-4F29-B4BF-66CFE35E1017}|AppointmentSystem_API\\AppointmentSystem_API.csproj|solutionrelative:appointmentsystem_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6973DC49-AC82-4C3E-AA0F-DF0651850815}|AppointmentSystem_Infrastructure\\AppointmentSystem_Infrastructure.csproj|c:\\dev\\dbak\u0131rwebkursu\\appointmentsystemproject\\appointmentsystem_infrastructure\\persistence\\context\\ef\\appointmentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6973DC49-AC82-4C3E-AA0F-DF0651850815}|AppointmentSystem_Infrastructure\\AppointmentSystem_Infrastructure.csproj|solutionrelative:appointmentsystem_infrastructure\\persistence\\context\\ef\\appointmentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6973DC49-AC82-4C3E-AA0F-DF0651850815}|AppointmentSystem_Infrastructure\\AppointmentSystem_Infrastructure.csproj|c:\\dev\\dbak\u0131rwebkursu\\appointmentsystemproject\\appointmentsystem_infrastructure\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6973DC49-AC82-4C3E-AA0F-DF0651850815}|AppointmentSystem_Infrastructure\\AppointmentSystem_Infrastructure.csproj|solutionrelative:appointmentsystem_infrastructure\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109EADF9-6636-485A-992E-126D6A27EC0C}|AppointmentSystem_Core\\AppointmentSystem_Core.csproj|c:\\dev\\dbak\u0131rwebkursu\\appointmentsystemproject\\appointmentsystem_core\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109EADF9-6636-485A-992E-126D6A27EC0C}|AppointmentSystem_Core\\AppointmentSystem_Core.csproj|solutionrelative:appointmentsystem_core\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{109EADF9-6636-485A-992E-126D6A27EC0C}|AppointmentSystem_Core\\AppointmentSystem_Core.csproj|c:\\dev\\dbak\u0131rwebkursu\\appointmentsystemproject\\appointmentsystem_core\\validators\\registerdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{109EADF9-6636-485A-992E-126D6A27EC0C}|AppointmentSystem_Core\\AppointmentSystem_Core.csproj|solutionrelative:appointmentsystem_core\\validators\\registerdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6973DC49-AC82-4C3E-AA0F-DF0651850815}|AppointmentSystem_Infrastructure\\AppointmentSystem_Infrastructure.csproj|c:\\dev\\dbak\u0131rwebkursu\\appointmentsystemproject\\appointmentsystem_infrastructure\\persistence\\seed\\adminseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6973DC49-AC82-4C3E-AA0F-DF0651850815}|AppointmentSystem_Infrastructure\\AppointmentSystem_Infrastructure.csproj|solutionrelative:appointmentsystem_infrastructure\\persistence\\seed\\adminseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{109EADF9-6636-485A-992E-126D6A27EC0C}|AppointmentSystem_Core\\AppointmentSystem_Core.csproj|c:\\dev\\dbak\u0131rwebkursu\\appointmentsystemproject\\appointmentsystem_core\\validators\\logindtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{109EADF9-6636-485A-992E-126D6A27EC0C}|AppointmentSystem_Core\\AppointmentSystem_Core.csproj|c:\\dev\\dbak\u0131rwebkursu\\appointmentsystemproject\\appointmentsystem_core\\services\\concrete\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{109EADF9-6636-485A-992E-126D6A27EC0C}|AppointmentSystem_Core\\AppointmentSystem_Core.csproj|solutionrelative:appointmentsystem_core\\services\\concrete\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6973DC49-AC82-4C3E-AA0F-DF0651850815}|AppointmentSystem_Infrastructure\\AppointmentSystem_Infrastructure.csproj|c:\\dev\\dbak\u0131rwebkursu\\appointmentsystemproject\\appointmentsystem_infrastructure\\persistence\\seed\\adminseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6973DC49-AC82-4C3E-AA0F-DF0651850815}|AppointmentSystem_Infrastructure\\AppointmentSystem_Infrastructure.csproj|solutionrelative:appointmentsystem_infrastructure\\persistence\\seed\\adminseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41777CF7-AD87-4F29-B4BF-66CFE35E1017}|AppointmentSystem_API\\AppointmentSystem_API.csproj|c:\\dev\\dbak\u0131rwebkursu\\appointmentsystemproject\\appointmentsystem_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41777CF7-AD87-4F29-B4BF-66CFE35E1017}|AppointmentSystem_API\\AppointmentSystem_API.csproj|solutionrelative:appointmentsystem_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +46,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppointmentDbContext.cs",
+              "DocumentMoniker": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Infrastructure\\Persistence\\Context\\EF\\AppointmentDbContext.cs",
+              "RelativeDocumentMoniker": "AppointmentSystem_Infrastructure\\Persistence\\Context\\EF\\AppointmentDbContext.cs",
+              "ToolTip": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Infrastructure\\Persistence\\Context\\EF\\AppointmentDbContext.cs",
+              "RelativeToolTip": "AppointmentSystem_Infrastructure\\Persistence\\Context\\EF\\AppointmentDbContext.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAADsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T13:08:47.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServiceCollectionExtension.cs",
+              "DocumentMoniker": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Core\\ServiceCollectionExtension.cs",
+              "RelativeDocumentMoniker": "AppointmentSystem_Core\\ServiceCollectionExtension.cs",
+              "ToolTip": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Core\\ServiceCollectionExtension.cs",
+              "RelativeToolTip": "AppointmentSystem_Core\\ServiceCollectionExtension.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T13:05:20.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Infrastructure\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "AppointmentSystem_Infrastructure\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Infrastructure\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "AppointmentSystem_Infrastructure\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAABYPSoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T13:02:24.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_API\\appsettings.json",
+              "RelativeDocumentMoniker": "AppointmentSystem_API\\appsettings.json",
+              "ToolTip": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_API\\appsettings.json",
+              "RelativeToolTip": "AppointmentSystem_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-30T13:01:50.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RegisterDTOValidator.cs",
               "DocumentMoniker": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Core\\Validators\\RegisterDTOValidator.cs",
               "RelativeDocumentMoniker": "AppointmentSystem_Core\\Validators\\RegisterDTOValidator.cs",
               "ToolTip": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Core\\Validators\\RegisterDTOValidator.cs",
               "RelativeToolTip": "AppointmentSystem_Core\\Validators\\RegisterDTOValidator.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwDAAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAQwF8AAACcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-30T12:52:03.579Z",
               "EditorCaption": ""
@@ -48,6 +116,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_API\\Program.cs",
+              "RelativeDocumentMoniker": "AppointmentSystem_API\\Program.cs",
+              "ToolTip": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_API\\Program.cs",
+              "RelativeToolTip": "AppointmentSystem_API\\Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwC8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T12:44:29.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "LoginDTOValidator.cs",
               "DocumentMoniker": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Core\\Validators\\LoginDTOValidator.cs",
               "RelativeDocumentMoniker": "AppointmentSystem_Core\\Validators\\LoginDTOValidator.cs",
@@ -55,12 +136,11 @@
               "RelativeToolTip": "AppointmentSystem_Core\\Validators\\LoginDTOValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T12:52:02.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T12:52:02.789Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Core\\Services\\Concrete\\AuthService.cs",
               "RelativeDocumentMoniker": "AppointmentSystem_Core\\Services\\Concrete\\AuthService.cs",
@@ -68,34 +148,19 @@
               "RelativeToolTip": "AppointmentSystem_Core\\Services\\Concrete\\AuthService.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T12:51:56.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T12:51:56.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AdminSeeding.cs",
               "DocumentMoniker": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Infrastructure\\Persistence\\Seed\\AdminSeeding.cs",
               "RelativeDocumentMoniker": "AppointmentSystem_Infrastructure\\Persistence\\Seed\\AdminSeeding.cs",
-              "ToolTip": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Infrastructure\\Persistence\\Seed\\AdminSeeding.cs*",
-              "RelativeToolTip": "AppointmentSystem_Infrastructure\\Persistence\\Seed\\AdminSeeding.cs*",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAUwBUAAAAxAAAAAAAAAA==",
+              "ToolTip": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_Infrastructure\\Persistence\\Seed\\AdminSeeding.cs",
+              "RelativeToolTip": "AppointmentSystem_Infrastructure\\Persistence\\Seed\\AdminSeeding.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T12:46:40.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_API\\Program.cs",
-              "RelativeDocumentMoniker": "AppointmentSystem_API\\Program.cs",
-              "ToolTip": "C:\\Dev\\DBak\u0131rWebKursu\\AppointmentSystemProject\\AppointmentSystem_API\\Program.cs*",
-              "RelativeToolTip": "AppointmentSystem_API\\Program.cs*",
-              "ViewState": "AgIAAE8AAAAA/v////8AwFkAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T12:44:29.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T12:46:40.381Z"
             }
           ]
         }
