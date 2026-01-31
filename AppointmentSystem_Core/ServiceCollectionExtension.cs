@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AppointmentSystem_Domain.Entities;
 
 namespace AppointmentSystem_Core
 {
@@ -26,6 +27,7 @@ namespace AppointmentSystem_Core
 
             #endregion
 
+
             #region DI Mappings
             services.AddScoped<IDepartmentService, DepartmentService>();
             services.AddScoped<IDoctorService, DoctorService>();
@@ -35,6 +37,8 @@ namespace AppointmentSystem_Core
             services.AddScoped<IAuthService, AuthService>();
 
             #endregion
+
+
 
             #region FluentValidation
 

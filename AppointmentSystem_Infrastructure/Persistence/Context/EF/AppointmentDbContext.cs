@@ -46,6 +46,18 @@ namespace AppointmentSystem_Infrastructure.Persistence.Context
                       .IsRequired()
                       .HasMaxLength(13);
             });
+
+            modelBuilder.Entity<Doctor>()
+                .HasOne(d => d.ApplicationUser)
+                .WithMany() // ApplicationUser tarafında collection yoksa
+                .HasForeignKey(d => d.AppUserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Doctor>()
+                .HasOne(d => d.Department)
+                .WithMany(dept => dept.Doctors)
+                .HasForeignKey(d => d.DepartmentId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
 
         // SaveChangesAsync Amacı: Her kaydın ne zaman oluşturulduğunu ve son güncellemesinin ne zaman yapıldığını otomatik olarak kaydetmek.

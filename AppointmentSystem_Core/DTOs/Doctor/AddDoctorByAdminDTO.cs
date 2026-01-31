@@ -12,8 +12,8 @@ namespace AppointmentSystem_Core.DTOs.Doctor
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string  TC { get; set; }
-        public Guid DepartmentId { get; set; } 
+        public string TC { get; set; }
+        public Guid DepartmentId { get; set; }
         public string PhoneNumber { get; set; }
     }
 }

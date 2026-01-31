@@ -20,76 +20,84 @@ namespace AppointmentSystem_Core.Services.Concrete
         private readonly IGenericRepository<Doctor> _doctorRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly UserManager<ApplicationUser> _userManager;
-        public DoctorService(IGenericRepository<Doctor> doctorRepository, IUnitOfWork unitOfWork, UserManager<ApplicationUser> userManager)
+        private readonly IGenericRepository<Department> _departmentRepository;
+        public DoctorService(IGenericRepository<Doctor> doctorRepository, IUnitOfWork unitOfWork, UserManager<ApplicationUser> userManager, IGenericRepository<Department> departmentRepository)
         {
             _unitOfWork = unitOfWork;
             _doctorRepository = doctorRepository;
             _userManager = userManager;
+            _departmentRepository = departmentRepository;
         }
 
-        public async Task<IDataResult<UserDTO>> AddDoctorAsync(AddDoctorByAdminDTO addDoctorByAdminDto)
+        public async Task<IDataResult<UserDTO>> AddDoctorAsync(AddDoctorByAdminDTO dto)
         {
+            if (await _userManager.FindByEmailAsync(dto.Email) != null)
+                return new ErrorDataResult<UserDTO>("Bu email adresiyle kayıtlı kullanıcı var");
+
+            if (await _userManager.FindByNameAsync(dto.TC) != null)
+                return new ErrorDataResult<UserDTO>("Bu TC ile kayıtlı kullanıcı var");
+
+            var department = await _departmentRepository.GetByIdAsync(dto.DepartmentId);
+            if(department == null)
+            {
+                return new ErrorDataResult<UserDTO>("Deparman sistemde bulunamadı");
+            }
+                      
+
+            // 3. Identity User Oluşturma
+            var newDoctorUser = new ApplicationUser
+            {
+                UserName = dto.TC,
+                TC = dto.TC,
+                Email = dto.Email,
+                Name = dto.FirstName,
+                Surname = dto.LastName,
+                PhoneNumber = dto.PhoneNumber,
+                EmailConfirmed = true // Admin eklediği için onaylı sayalım
+            };
+
+            var identityResult = await _userManager.CreateAsync(newDoctorUser, dto.Password);
+            if (!identityResult.Succeeded)
+            {
+                return new ErrorDataResult<UserDTO>(string.Join(", ", identityResult.Errors.Select(e => e.Description)));
+            }
+
+            await _userManager.AddToRoleAsync(newDoctorUser, "Doctor");
+
+            // 4. Doctor Tablosuna Kayıt (MANUEL ROLLBACK EKLENDİ)
             try
             {
-                var emaiCheck = await _userManager.FindByEmailAsync(addDoctorByAdminDto.Email);
-                if (emaiCheck != null)
-                {
-                    return new ErrorDataResult<UserDTO>("Bu email adresiyle kayıtlı kullanıcı var");
-                }
-
-                var tcCheck = await _userManager.FindByNameAsync(addDoctorByAdminDto.TC);
-                if (tcCheck != null)
-                {
-                    return new ErrorDataResult<UserDTO>("Bu TC Kimlik numarası ile kayıtlı kullanıcı zaten var");
-                }
-
-                var newDoctor = new ApplicationUser
-                {
-                    UserName = addDoctorByAdminDto.TC,
-                    TC = addDoctorByAdminDto.TC,
-                    Email = addDoctorByAdminDto.Email,
-                    Name = addDoctorByAdminDto.FirstName,
-                    Surname = addDoctorByAdminDto.LastName,
-                    PhoneNumber = addDoctorByAdminDto.PhoneNumber
-                };
-
-                var result = await _userManager.CreateAsync(newDoctor, addDoctorByAdminDto.Password);
-                if (!result.Succeeded)
-                {
-                    var errors = string.Join(", ", result.Errors.Select(e => e.Description));
-                    return new ErrorDataResult<UserDTO>(errors);
-                }
-
-                await _userManager.AddToRoleAsync(newDoctor, "Doctor");
-
                 var doctor = new Doctor
                 {
-                    AppUserId = newDoctor.Id,
-                    DepartmentId = addDoctorByAdminDto.DepartmentId
+                    AppUserId = newDoctorUser.Id,
+                    DepartmentId = dto.DepartmentId,
+                    isActive = true
                 };
 
                 await _doctorRepository.AddAsync(doctor);
+
                 await _unitOfWork.SaveChangesAsync();
 
-                //  UserDTO manuel mapping
-                var userDTO = new UserDTO
+                // Başarılı Dönüş
+                return new SuccessDataResult<UserDTO>(new UserDTO
                 {
-                    Id = newDoctor.Id.ToString(),
-                    FirstName = newDoctor.Name,
-                    LastName = newDoctor.Surname,
-                    Email = newDoctor.Email,
-                    TC = newDoctor.TC,
-                    PhoneNumber = newDoctor.PhoneNumber,
-                    Token = "", // Token yok
-                    Expiration = DateTime.Now
-                };
-
-                return new SuccessDataResult<UserDTO>(userDTO, "Doktor başarılı bir şekilde eklendi");
+                    Id = newDoctorUser.Id.ToString(),
+                    FirstName = newDoctorUser.Name,
+                    LastName = newDoctorUser.Surname,
+                    Email = newDoctorUser.Email,
+                    TC = newDoctorUser.TC,
+                    PhoneNumber = newDoctorUser.PhoneNumber
+                }, "Doktor başarıyla eklendi.");
             }
             catch (Exception ex)
             {
-                return new ErrorDataResult<UserDTO>($"Doktor eklenirken hata oluştu: {ex.Message}");
+                // HATA OLURSA: Identity User'ı sil (Rollback)
+                // Böylece "User var ama Doctor yok" durumu engellenir.
+                await _userManager.DeleteAsync(newDoctorUser);
+
+                return new ErrorDataResult<UserDTO>($"Doktor profili oluşturulamadı, işlem geri alındı. Hata: {ex.Message}");
             }
         }
+
     }
 }
