@@ -1,4 +1,5 @@
 ﻿using AppointmentSystem_Core.DTOs.Auth;
+using AppointmentSystem_Core.DTOs.Department;
 using AppointmentSystem_Core.DTOs.Doctor;
 using AppointmentSystem_Core.Utilities.Results.Abstract;
 using System;
@@ -12,5 +13,10 @@ namespace AppointmentSystem_Core.Services.Abstract
     public interface IDoctorService
     {
         Task<IDataResult<UserDTO>> AddDoctorAsync(AddDoctorByAdminDTO addDoctorByAdminDto);
+        Task<IResult> UpdateDoctorAsync(UpdateDoctorDTO updateDoctorDto);
+        Task<IResult> DeleteDoctorAsync(Guid doctorId);
+        Task<IDataResult<IEnumerable<DoctorDetailDTO>>> GetAllDoctorsAsync();
+        Task<IDataResult<DoctorDetailDTO>> GetDoctorByIdAsync(Guid doctorId);
+
     }
 }

@@ -1,8 +1,10 @@
 ﻿using AppointmentSystem_Core.DTOs.Appointment;
+using AppointmentSystem_Core.DTOs.Auth;
 using AppointmentSystem_Core.DTOs.Department;
 using AppointmentSystem_Core.DTOs.Doctor;
 using AppointmentSystem_Core.DTOs.Patient;
 using AppointmentSystem_Domain.Entities;
+using AppointmentSystem_Domain.Entities.Identity;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
@@ -18,13 +20,31 @@ namespace AppointmentSystem_Core.Mapper
         public MappingProfile() 
         {
             CreateMap<AppointmentDTO, Appointment>().ReverseMap();
-            CreateMap<DoctorDTO, Doctor>().ReverseMap();
+            CreateMap<DoctorDetailDTO, Doctor>().ReverseMap();
             CreateMap<DepartmentDTO, Department>().ReverseMap();
             CreateMap<PatientDTO, Patient>().ReverseMap();
 
             // department
             CreateMap<CreateDepartmentDTO, Department>().ReverseMap();
             CreateMap<UpdateDepartmentDTO, Department>().ReverseMap();
+
+            CreateMap<ApplicationUser, UserDTO>()
+            .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.Name))
+            .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => src.Surname))
+            .ReverseMap();
+
+            // _mapper.Map satırı çalıştığında, AutoMapper DoctorDetailDTO içindeki FirstName alanını nereden dolduracağını bilemez. Çünkü Doctor tablosunda FirstName yok, o ApplicationUser tablosunda. Bu yüzden ForMember ile bu alanların nasıl doldurulacağını belirtmemiz gerekir.
+
+
+            CreateMap<Doctor, DoctorDetailDTO>()
+            .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.ApplicationUser.Name))
+            .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => src.ApplicationUser.Surname))
+            .ForMember(dest => dest.TC, opt => opt.MapFrom(src => src.ApplicationUser.TC))
+            .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.ApplicationUser.Email))
+            .ForMember(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.ApplicationUser.PhoneNumber))
+            .ForMember(dest => dest.DepartmentName, opt => opt.MapFrom(src => src.Department.Name));
+
+            CreateMap<UpdateDepartmentDTO,Doctor>().ReverseMap();
         }        
     }
 }
