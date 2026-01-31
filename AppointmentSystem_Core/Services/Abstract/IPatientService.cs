@@ -9,6 +9,6 @@ namespace AppointmentSystem_Core.Services.Abstract
 {
     public interface IPatientService
     {
-
+        Task AddPatientAsync(Guid userId, RegisterDTO registerDto);
     }
 }

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppointmentSystem_Infrastructure.UoW
+namespace AppointmentSystem_Core.DataAccess.Abstract
 {
     public interface IUnitOfWork
     {

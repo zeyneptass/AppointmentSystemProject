@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static AppointmentSystem_Infrastructure.UoW.IUnitOfWork;
+using static AppointmentSystem_Core.DataAccess.Abstract.IUnitOfWork;
 
 namespace AppointmentSystem_Infrastructure.UoW
 {

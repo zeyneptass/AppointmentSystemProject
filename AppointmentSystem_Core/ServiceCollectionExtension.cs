@@ -39,6 +39,7 @@ namespace AppointmentSystem_Core
             #region FluentValidation
 
             services.AddValidatorsFromAssembly(typeof(LoginDTOValidator).Assembly);
+            services.AddValidatorsFromAssembly(typeof(RegisterDTOValidator).Assembly);
 
             #endregion
 

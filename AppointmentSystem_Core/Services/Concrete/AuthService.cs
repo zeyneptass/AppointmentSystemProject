@@ -18,12 +18,14 @@ namespace AppointmentSystem_Core.Services.Concrete
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ITokenService _tokenService;
+        private readonly IPatientService _patientService;
 
-        public AuthService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager,ITokenService tokenService)
+        public AuthService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager,ITokenService tokenService,IPatientService patientService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _tokenService = tokenService;
+            _patientService = patientService;
         }
         public async Task<IDataResult<UserDTO>> LoginAsync(LoginDTO loginDto)
         {
@@ -89,6 +91,17 @@ namespace AppointmentSystem_Core.Services.Concrete
             }
             // kullnıcı kayıt olunca patient olarak rol atanır
             await _userManager.AddToRoleAsync(newUser, "Patient");
+
+            try
+            {
+                await _patientService.AddPatientAsync(newUser.Id, registerDto);
+            }
+            catch (Exception e)
+            {
+                // Eğer hasta ekleme sırasında bir hata oluşursa, kullanıcıyı sil
+                await _userManager.DeleteAsync(newUser);
+                return new ErrorDataResult<UserDTO>($"Hasta kaydı oluşturulurken hata oluştu: {e.Message}");
+            }
 
             // otomatik token oluşturma
             var roles = await _userManager.GetRolesAsync(newUser);
