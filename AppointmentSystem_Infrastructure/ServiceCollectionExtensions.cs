@@ -3,6 +3,7 @@ using AppointmentSystem_Core.Services.Abstract;
 using AppointmentSystem_Domain.Entities.Identity;
 using AppointmentSystem_Infrastructure.Persistence.Context;
 using AppointmentSystem_Infrastructure.Repository;
+using AppointmentSystem_Infrastructure.Serialization;
 using AppointmentSystem_Infrastructure.Services.TokenExtensions;
 using AppointmentSystem_Infrastructure.UoW;
 using Microsoft.AspNetCore.Identity;
@@ -46,6 +47,15 @@ namespace AppointmentSystem_Infrastructure
             services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
 
             services.AddScoped<ITokenService, TokenService>();
+
+            #region DateConverter
+
+            services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.Converters.Add(new DateOnlyJsonConverter());
+                });
+            #endregion
 
             return services;
 
