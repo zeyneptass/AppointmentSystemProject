@@ -84,12 +84,13 @@ namespace AppointmentSystem_Infrastructure.Repository
             return query.FirstOrDefaultAsync(e => e.Id == id);
         }
 
-        public async void SoftDelete(Guid id)
+        public async Task SoftDelete(Guid id)
         {
             var entity = await _dbSet.FindAsync(id);
            if (entity != null)
             {
                 entity.IsDeleted = true;
+                entity.UpdatedDate = DateTime.Now;
                 _dbSet.Update(entity);
             }
         }

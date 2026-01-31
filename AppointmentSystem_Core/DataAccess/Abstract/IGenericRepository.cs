@@ -13,7 +13,7 @@ namespace AppointmentSystem_Core.DataAccess.Abstract
     {
         Task AddAsync(T entity);
         void Update(T entity);
-        void SoftDelete(Guid id);
+        Task SoftDelete(Guid id);
         Task<T> GetByIdAsync(Guid id, bool asNoTracking=true);
         Task<IEnumerable<T>> GetAllAsync(bool asNoTracking = true, params Expression<Func<T, object>>[] includes);
         Task<IEnumerable<T>> GetAsync(Expression<Func<T, bool>> filter, bool asNoTracking = true, params Expression<Func<T, object>>[] includes);
