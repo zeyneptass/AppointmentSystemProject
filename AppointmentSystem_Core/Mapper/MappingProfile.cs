@@ -21,6 +21,10 @@ namespace AppointmentSystem_Core.Mapper
             CreateMap<DoctorDTO, Doctor>().ReverseMap();
             CreateMap<DepartmentDTO, Department>().ReverseMap();
             CreateMap<PatientDTO, Patient>().ReverseMap();
+
+            // department
+            CreateMap<CreateDepartmentDTO, Department>().ReverseMap();
+            CreateMap<UpdateDepartmentDTO, Department>().ReverseMap();
         }        
     }
 }

@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace AppointmentSystem_Core.DTOs.Department
 {
-    public class DepartmentDTO
+    public class CreateDepartmentDTO
     {
-        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public DateTime CreatedDate { get; set; }
     }
 }
