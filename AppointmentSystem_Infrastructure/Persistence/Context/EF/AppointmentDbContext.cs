@@ -58,6 +58,19 @@ namespace AppointmentSystem_Infrastructure.Persistence.Context
                 .WithMany(dept => dept.Doctors)
                 .HasForeignKey(d => d.DepartmentId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            // Patient ve ApplicationUser arasındaki ilişkiyi yapılandır
+            modelBuilder.Entity<Patient>()
+                .HasOne(p => p.ApplicationUser) // Bir hastanın bir kullanıcısı vardır
+                .WithMany() // Bir kullanıcının birden fazla hasta kaydı olabilir (veya WithOne)
+                .HasForeignKey(p => p.AppUserId) // Foreign Key alanın
+                .OnDelete(DeleteBehavior.Restrict); // ÇAKIŞMAYI ÖNLEYEN KRİTİK SATIR
+
+            modelBuilder.Entity<Doctor>()
+                .HasOne(d => d.ApplicationUser)
+                .WithMany()
+                .HasForeignKey(d => d.AppUserId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
 
         // SaveChangesAsync Amacı: Her kaydın ne zaman oluşturulduğunu ve son güncellemesinin ne zaman yapıldığını otomatik olarak kaydetmek.

@@ -1,4 +1,5 @@
 ﻿using AppointmentSystem_Domain.Entities.Base;
+using AppointmentSystem_Domain.Entities.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,9 @@ namespace AppointmentSystem_Domain.Entities
         public ICollection<Appointment> Appointments { get; set; }
         // Identity User Id ile ilişki
         public Guid AppUserId { get; set; }
+
+        //navigation property for AppUser
+        public ApplicationUser ApplicationUser { get; set; }
 
     }
 }

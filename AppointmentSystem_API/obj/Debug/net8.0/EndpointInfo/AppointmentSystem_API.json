@@ -67,10 +67,10 @@
         }
       }
     },
-    "/api/Department": {
+    "/api/Departments": {
       "get": {
         "tags": [
-          "Department"
+          "Departments"
         ],
         "responses": {
           "200": {
@@ -80,7 +80,7 @@
       },
       "post": {
         "tags": [
-          "Department"
+          "Departments"
         ],
         "requestBody": {
           "content": {
@@ -109,7 +109,7 @@
       },
       "put": {
         "tags": [
-          "Department"
+          "Departments"
         ],
         "requestBody": {
           "content": {
@@ -137,10 +137,10 @@
         }
       }
     },
-    "/api/Department/{id}": {
+    "/api/Departments/{id}": {
       "get": {
         "tags": [
-          "Department"
+          "Departments"
         ],
         "parameters": [
           {
@@ -162,7 +162,7 @@
       },
       "delete": {
         "tags": [
-          "Department"
+          "Departments"
         ],
         "parameters": [
           {
@@ -183,10 +183,10 @@
         }
       }
     },
-    "/api/Doctor/add-doctor": {
+    "/api/Doctors/add-doctor": {
       "post": {
         "tags": [
-          "Doctor"
+          "Doctors"
         ],
         "requestBody": {
           "content": {
@@ -214,10 +214,10 @@
         }
       }
     },
-    "/api/Doctor": {
+    "/api/Doctors": {
       "get": {
         "tags": [
-          "Doctor"
+          "Doctors"
         ],
         "responses": {
           "200": {
@@ -225,9 +225,9 @@
           }
         }
       },
-      "post": {
+      "put": {
         "tags": [
-          "Doctor"
+          "Doctors"
         ],
         "requestBody": {
           "content": {
@@ -255,10 +255,10 @@
         }
       }
     },
-    "/api/Doctor/{id}": {
+    "/api/Doctors/{id}": {
       "get": {
         "tags": [
-          "Doctor"
+          "Doctors"
         ],
         "parameters": [
           {
@@ -280,7 +280,94 @@
       },
       "delete": {
         "tags": [
-          "Doctor"
+          "Doctors"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Patients": {
+      "get": {
+        "tags": [
+          "Patients"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Patients"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Patients/{id}": {
+      "get": {
+        "tags": [
+          "Patients"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Patients"
         ],
         "parameters": [
           {
@@ -443,6 +530,32 @@
             "nullable": true
           },
           "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PatientUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
             "type": "string",
             "nullable": true
           }

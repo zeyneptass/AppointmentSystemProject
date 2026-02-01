@@ -22,7 +22,6 @@ namespace AppointmentSystem_Core.Mapper
             CreateMap<AppointmentDTO, Appointment>().ReverseMap();
             CreateMap<DoctorDetailDTO, Doctor>().ReverseMap();
             CreateMap<DepartmentDTO, Department>().ReverseMap();
-            CreateMap<PatientDTO, Patient>().ReverseMap();
 
             // department
             CreateMap<CreateDepartmentDTO, Department>().ReverseMap();
@@ -45,6 +44,15 @@ namespace AppointmentSystem_Core.Mapper
             .ForMember(dest => dest.DepartmentName, opt => opt.MapFrom(src => src.Department.Name));
 
             CreateMap<UpdateDepartmentDTO,Doctor>().ReverseMap();
+
+            CreateMap<PatientUpdateDTO, Patient>().ReverseMap();
+            CreateMap<Patient, PatientDetailDTO>()
+            .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.ApplicationUser.Name))
+            .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => src.ApplicationUser.Surname))
+            .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.ApplicationUser.Email))
+            .ForMember(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.ApplicationUser.PhoneNumber))
+            .ForMember(dest => dest.TC, opt => opt.MapFrom(src => src.ApplicationUser.TC)) 
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id));
         }        
     }
 }

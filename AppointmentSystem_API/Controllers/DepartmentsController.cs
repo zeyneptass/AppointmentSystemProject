@@ -8,10 +8,10 @@ namespace AppointmentSystem_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DepartmentController : ControllerBase
+    public class DepartmentsController : ControllerBase
     {
         private readonly IDepartmentService _deparmentService;
-        public DepartmentController(IDepartmentService deparmentService)
+        public DepartmentsController(IDepartmentService deparmentService)
         {
             _deparmentService = deparmentService;
         }
